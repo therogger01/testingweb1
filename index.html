@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naman Verma - Product Designer & Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#000000',
+                        secondary: '#f5f5f5',
+                        accent: '#007bff'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased">
+    <custom-navbar></custom-navbar>
+    
+    <main>
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center justify-center px-6 py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">Product Designer & Developer</h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                    I design and build digital products that are beautiful, functional, and accessible.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/work.html" class="bg-primary text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-colors">
+                        View my work
+                    </a>
+                    <a href="/about.html" class="border border-gray-300 px-8 py-4 rounded-full font-medium hover:bg-gray-50 transition-colors">
+                        More about me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Work Section -->
+        <section id="featured-work" class="py-20 px-6 bg-secondary">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Featured Work</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <img src="http://static.photos/technology/640x360/1" alt="E-commerce Platform" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">E-commerce Platform</h3>
+                            <p class="text-gray-600 mb-4">A modern e-commerce solution with seamless user experience.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">React</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Node.js</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                            </div>
+                            <a href="/project-ecommerce.html" class="text-accent font-medium hover:underline">View case study →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover-lift">
+                        <img src="http://static.photos/technology/640x360/2" alt="Mobile App Design" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Mobile App Design</h3>
+                            <p class="text-gray-600 mb-4">A fitness tracking app with intuitive UI and smooth animations.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Figma</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Swift</span>
+                                <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Firebase</span>
+                            </div>
+                            <a href="/project-fitness.html" class="text-accent font-medium hover:underline">View case study →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="/work.html" class="inline-flex items-center text-accent font-medium hover:underline">
+                        View all projects
+                        <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Preview Section -->
+        <section id="about-preview" class="py-20 px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+                        <p class="text-gray-600 mb-6">
+                            I'm a product designer and developer with a passion for creating digital experiences 
+                            that are both beautiful and functional. With over 5 years of experience in the industry, 
+                            I've worked with startups and established companies to bring their ideas to life.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="/about.html" class="bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors">
+                                Learn more
+                            </a>
+                            <a href="/contact.html" class="border border-gray-300 px-6 py-3 rounded-full font-medium hover:bg-gray-50 transition-colors">
+                                Get in touch
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="http://static.photos/people/400x400/1" alt="Naman Verma" class="w-64 h-64 rounded-full object-cover shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact CTA Section -->
+        <section class="py-20 px-6 bg-primary text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Let's work together</h2>
+                <p class="text-gray-300 mb-10 max-w-2xl mx-auto">
+                    I'm always interested in new opportunities and exciting projects. 
+                    Whether you have a question or just want to say hi, feel free to reach out!
+                </p>
+                <a href="/contact.html" class="inline-flex items-center bg-white text-primary px-8 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors">
+                    <i data-feather="mail" class="mr-2 w-5 h-5"></i>
+                    Get in touch
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
